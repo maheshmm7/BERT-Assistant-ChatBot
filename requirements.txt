@@ -1,0 +1,11 @@
+accelerate
+Flask
+transformers
+torch
+flask-cors
+gunicorn
+numpy
+scikit-learn
+pandas
+textblob
+waitress

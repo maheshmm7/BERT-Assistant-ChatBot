@@ -1,0 +1,297 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F5F5F5;
+  transition: background-color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark-mode .chatbox__support,
+.dark-mode .messages__item {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.dark-mode .chatbox__footer input,
+.dark-mode .chatbox__footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .chatbox__send--footer {
+  background: #4a90e2;
+  color: #fff;
+}
+
+/* Chatbox */
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chatbox__support {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.chatbox--active {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+/* Header */
+.chatbox__header {
+  background: linear-gradient(93.12deg, #007bff 0.52%, #28a745 100%);
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chatbox__image--header {
+  margin-right: 10px;
+}
+
+.chatbox__heading--header,
+.chatbox__description--header {
+  color: white;
+  margin: 0;
+}
+
+.chatbox__heading--header {
+  font-size: 1.2rem;
+}
+
+.chatbox__description--header {
+  font-size: 0.85rem;
+}
+
+/* Messages */
+.chatbox__messages {
+  flex: 1 1 70%; /* Increased space for messages area */
+  overflow-y: auto;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages__item {
+  margin: 10px 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 80%;
+  transition: background 0.3s;
+}
+
+/* Align User on Right and Bot on Left */
+.messages__item--visitor {
+  background: #e0f7fa;
+  align-self: flex-end; /* User messages on the right */
+}
+
+.messages__item--operator {
+  background: #b2dfdb;
+  align-self: flex-start; /* Bot messages on the left */
+}
+
+.timestamp {
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}
+
+/* Footer */
+.chatbox__footer {
+  display: flex;
+  align-items: center;
+  padding: 5px; /* Reduced padding for footer */
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Adjust input field */
+.chatbox__footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border 0.3s;
+}
+
+.chatbox__footer input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+}
+.chatbox__footer input::placeholder {
+  text-align: center; /* Center the placeholder text */
+  color: #aaa; /* Optional: change color for better visibility */
+  font-style: italic; /* Optional: make it italic */
+}
+
+
+/* Send Button */
+.chatbox__send--footer {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.chatbox__send--footer:hover {
+  background: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* End Chat Button Styling */
+.end-chat-button {
+  background: #ff4c4c; /* Red background for visibility */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 10px; /* Add margin for spacing */
+}
+
+.end-chat-button:hover {
+  background: #e60000; /* Darker red on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.end-chat-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 2px #ff9999; /* Custom focus outline for accessibility */
+}
+
+/* Floating Action Button */
+.chatbox__button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: #eeeff0;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Increase shadow for more prominence */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.chatbox__button:hover {
+  background: #0056b3;
+  transform: scale(1.1); /* Scale up slightly on hover for better UX */
+}
+
+.chatbox__button button {
+  background: transparent;
+  border: none;
+}
+
+/* Loading Indicator */
+.loading {
+  text-align: center;
+  padding: 10px;
+}
+
+.typing-indicator {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+/* Quick Replies */
+.quick-replies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  gap: 10px; /* Space between buttons */
+  padding: 5px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.quick-reply-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.quick-reply-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* Feedback Section */
+.feedback-section {
+  margin-top: 10px;
+  text-align: center;
+  background: #f9f9f9; /* Light background for feedback section */
+  padding: 10px; /* Padding around feedback section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.feedback-section p {
+  margin-bottom: 10px; /* Space below the feedback prompt */
+  font-size: 1rem; /* Font size for the prompt */
+  color: #333; /* Dark text color for contrast */
+}
+
+.feedback-section button {
+  background: #007bff; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px; /* Padding for buttons */
+  font-size: 0.85rem; /* Font size for buttons */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Transition for hover effect */
+  margin: 0 5px; /* Margin for spacing between buttons */
+}
+
+.feedback-section button:hover {
+  background: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.feedback-section button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px #007bff; /* Custom focus outline for accessibility */
+}

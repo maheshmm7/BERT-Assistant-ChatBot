@@ -1,0 +1,660 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Good day", "Hey", "Is anyone there?", "How are you?", "What's up?", "Good morning", "Good evening",
+        "Hii", "Hiii", "Helloo", "Heyy", "Helo", "Good mornin", "Gmorning", "G'day", "Howdy", "How do you do",
+        "Wazzup", "Sup", "Yo", "Morning", "Eve", "Hiya", "Hey there", "How's it going?", "What's new?", "What's happening?",
+        "Salutations", "Greetings", "Hey everyone", "Hi all", "Hey there!", "How are you doing?", "What's going on?",
+        "Good evenin", "Good afternoon", "How are ya?", "Hey!", "Hello there!", "Hey guys!", "Good to see you", "Long time no see",
+        "Hiii", "Hiii there", "Hello hello", "Hey hey", "Hola", "Bon jour", "Salut", "What's up with you?", "How's everything?"
+      ],
+      "responses": [
+        "Hello! How can I assist you?", "Hi there! What can I do for you today?", "Greetings! How can I help?", "Hey! How can I assist you today?", "Good day! What can I help you with?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye", "See you later", "Bye", "Farewell", "Catch you later", "Take care",
+        "Good bye", "See ya", "Bye bye", "Cya", "See you soon", "Later", "Laterz", "Peace out", "Adios",
+        "Fare well", "So long", "Catch you soon", "Catch you later", "Take care now", "Good night", "Night night",
+        "See ya later", "See ya soon", "Goodby", "Bye now", "Goodbyee", "Goodbye!", "See you!", "Later!",
+        "Take it easy", "Stay safe", "Stay well", "Bye for now", "Talk to you later", "G'bye", "Catch you later!", "Bye-bye",
+        "Take care!", "Good night!", "Peace!", "Cheerio", "Adieu", "Goodbyeee", "Sayonara", "So long!", "Bye guys!", "Catch you all later", "Until next time"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!", "See you soon! Take care!", "Bye! Feel free to reach out again.", "Farewell! Have a wonderful day!", "Take care! See you later."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you", "Thanks", "That's helpful", "Thank's a lot", "I appreciate it", "Thanks so much",
+        "Thankyou", "Thank u", "Thx", "Thnks", "Thnx", "Tnx", "Tnks", "Ty", "Tyvm",
+        "Much appreciated", "Thank you very much", "Thanks a bunch", "Thanks a lot", "Thanks a million", "Thanks a ton",
+        "I appreciate that", "Thanks a bunch", "Many thanks", "Thanks heaps", "Thankyou!", "Thank you!", "Thanks!",
+        "Thanks for your help", "Thanks for that", "That's a big help", "Cheers", "Thanks mate", "Thanks buddy", "Much obliged",
+        "Thanks so much!", "Thank you so much!", "Thank ya", "Thank you very much!", "Thanks a lot!", "Thanks bunches", "Thanks for everything",
+        "Thanks tons", "Appreciate it", "Big thanks", "Thanks again", "Thaaaanks", "Thanksss", "Thanx", "You're the best!", "You saved me!"
+      ],
+      "responses": [
+        "You're welcome!", "Happy to help!", "My pleasure!", "Anytime!", "Glad I could assist you!", "You're welcome! Anything else you need?"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "about",
+        "Tell me about Uptoskills",
+        "What is Uptoskills?",
+        "About Uptoskills",
+        "What does Uptoskills do?",
+        "Can you explain Uptoskills?",
+        "Who are you?",
+        "Tell me more about your company",
+        "What is this platform?",
+        "What is the mission of Uptoskills?",
+        "How can Uptoskills help me?",
+        "Give me details about Uptoskills",
+        "What does Uptoskills offer?",
+        "Can you tell me more about this website?",
+        "What is the purpose of Uptoskills?",
+        "What kind of services does Uptoskills provide?",
+        "What does this company focus on?",
+        "How can I benefit from Uptoskills?",
+        "What is the background of Uptoskills?",
+        "Why should I choose Uptoskills?",
+        "What makes Uptoskills different?"
+      ],
+      "responses": [
+        "Uptoskills is an innovative online learning platform focused on helping individuals enhance their professional and personal skills. Our primary goal is to provide accessible, affordable, and high-quality educational resources that empower people to advance in their careers or explore new areas of interest. Whether you're looking to improve your tech skills, enhance business knowledge, or develop soft skills like communication, we offer a variety of self-paced courses, articles, and tutorials to help you on your journey."
+        ]
+    },
+    {
+      "tag": "programs",
+      "patterns": [
+        "What programs do you offer?",
+        "Tell me about the training programs",
+        "What courses are available?",
+        "What kind of training can I get at Uptoskills?",
+        "Do you offer any programs?",
+        "Can you tell me about your learning programs?",
+        "What training opportunities are available?",
+        "What skills can I learn on Uptoskills?",
+        "Tell me more about the learning programs at Uptoskills",
+        "What subjects do your courses cover?",
+        "Are there any specializations available?",
+        "Can I take courses in different fields?",
+        "What topics do your programs focus on?",
+        "Do you have online training options?",
+        "Are there any new programs being launched?"
+      ],
+      "responses": [
+        "At Uptoskills, we offer a range of self-paced training programs in technology, business, and personal development. Visit https://uptoskills.com/learn-training/ to explore all available courses."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is Uptoskills located?",
+        "What is the location of Uptoskills?",
+        "Can you tell me where Uptoskills is based?",
+        "Where are you located?",
+        "What is your address?",
+        "Where is the company headquarters?",
+        "Tell me the location of Uptoskills",
+        "Where can I find Uptoskills?",
+        "Is there a physical location for Uptoskills?",
+        "Where are the offices of Uptoskills?",
+        "Can I visit your office?",
+        "Is Uptoskills located in New Delhi?",
+        "How do I get to Uptoskills?"
+      ],
+      "responses": [
+        "Uptoskills is located at Palam, New Delhi, Delhi 110077.",
+        "Our office is situated at Palam, New Delhi, Delhi 110077."
+      ]
+    },
+    {
+      "tag": "view_account_info",
+      "patterns": [
+        "How do I manage my account?",
+        "How can I check my account status?",
+        "What information can I view in my account?",
+        "Can I see my account details?"
+      ],
+      "responses": [
+        "To view your account information at Uptoskills, please log in to your account and navigate to the account settings. Here, you can see all your details and account status."
+      ]
+    },
+    {
+      "tag": "update_email",
+      "patterns": [
+        "How can I update my email address?",
+        "Can I change my email?",
+        "What do I do to change my email in my account?"
+      ],
+      "responses": [
+        "To update your email address at Uptoskills, log in to your account and go to the account settings. You can change your email there. If you encounter any issues, feel free to contact our support team."
+      ]
+    },
+    {
+      "tag": "password_reset",
+      "patterns": [
+        "How do I reset my password?",
+        "What should I do if I forget my password?",
+        "Can you help me with my password reset?",
+        "I can't remember my password. What do I do?"
+      ],
+      "responses": [
+        "To reset your password, go to the login page and click on 'Forgot Password?' Follow the instructions sent to your registered email to reset your password."
+      ]
+    },
+    {
+      "tag": "change_username",
+      "patterns": [
+        "Can I change my username?",
+        "How do I update my username?",
+        "What steps do I need to take to change my username?"
+      ],
+      "responses": [
+        "To change your username at Uptoskills, please log in to your account and go to the account settings. If you need assistance, our support team is here to help!"
+      ]
+    },
+    {
+      "tag": "add_payment_method",
+      "patterns": [
+        "How do I add a payment method?",
+        "What is the process for adding a payment option?",
+        "Can I update my payment information?"
+      ],
+      "responses": [
+        "To add a payment method, log in to your account and navigate to the payment settings. You can add or update your payment options there. If you have any questions, please contact our support team."
+      ]
+    },
+    {
+      "tag": "account_locked",
+      "patterns": [
+        "What do I do if my account is locked?",
+        "How can I unlock my account?",
+        "My account is locked. What should I do?"
+      ],
+      "responses": [
+        "If your account is locked, please visit the login page and follow the instructions to recover your account. If you need further assistance, contact our support team for help."
+      ]
+    },
+    {
+      "tag": "delete_account",
+      "patterns": [
+        "Can I delete my account?",
+        "How do I close my account?",
+        "What steps do I need to take to delete my account?"
+      ],
+      "responses": [
+        "To delete your account at Uptoskills, please log in to your account, navigate to account settings, and follow the instructions for account deletion. If you need assistance, feel free to contact our support team."
+      ]
+    } ,
+    {
+      "tag": "learn_to_earn",
+      "patterns": [
+        "What is Learn to Earn?",
+        "Tell me about the Learn to Earn program",
+        "How does Learn to Earn work?",
+        "What events are part of Learn to Earn?",
+        "Can I participate in Learn to Earn?",
+        "What benefits does Learn to Earn offer?",
+        "Is there a cost to join Learn to Earn?",
+        "How can I register for Learn to Earn events?",
+        "When are the Learn to Earn events held?",
+        "Where can I find more information about Learn to Earn?",
+        "What skills can I gain from the Learn to Earn program?",
+        "Are there any requirements to join Learn to Earn?",
+        "How often do Learn to Earn events take place?",
+        "Can I earn certificates from Learn to Earn activities?"
+      ],
+      "responses": [
+        "Learn to Earn is an initiative by Uptoskills that offers various events designed to enhance your skills while providing opportunities for earning. You can participate in workshops, webinars, and training sessions that equip you with valuable knowledge and practical experience. For more information and to register for upcoming events, please visit https://uptoskills.com/events/."
+      ]
+    },
+    {
+      "tag": "linkedin_profile",
+      "patterns": [
+        "What is your LinkedIn profile?",
+        "Can you share your LinkedIn link?",
+        "Where can I find your company on LinkedIn?",
+        "Do you have a LinkedIn page?"
+      ],
+      "responses": [
+        "You can find us on LinkedIn at [Uptoskills LinkedIn](https://www.linkedin.com/company/uptoskills/). Follow us for professional insights and company updates!"
+      ]
+    },
+    {
+      "tag": "instagram_profile",
+      "patterns": [
+        "What is your Instagram handle?",
+        "Can I see your Instagram profile?",
+        "Where can I find your company on Instagram?",
+        "Do you have an Instagram account?"
+      ],
+      "responses": [
+        "Follow us on Instagram at [Uptoskills Instagram](https://www.instagram.com/uptoskills/) to see updates, tips, and behind-the-scenes content!"
+      ]
+    },
+    {
+      "tag": "facebook_page",
+      "patterns": [
+        "Do you have a Facebook page?",
+        "What is your Facebook link?",
+        "Can I find your company on Facebook?",
+        "Where can I follow you on Facebook?"
+      ],
+      "responses": [
+        "You can follow us on Facebook at [Uptoskills Facebook](https://www.facebook.com/Uptoskills). Stay updated with our latest news and events!"
+      ]
+    },
+    {
+      "tag": "twitter_profile",
+      "patterns": [
+        "What is your Twitter handle?",
+        "Can I see your Twitter profile?",
+        "Where can I find your company on Twitter?",
+        "Do you have a Twitter account?"
+      ],
+      "responses": [
+        "Follow us on Twitter at [Uptoskills Twitter](https://twitter.com/Uptoskills) for valuable insights, updates, and industry news!"
+      ]
+    },
+    {
+      "tag": "youtube_channel",
+      "patterns": [
+        "Do you have a YouTube channel?",
+        "What is your YouTube link?",
+        "Can I find your company on YouTube?",
+        "Where can I watch your videos?"
+      ],
+      "responses": [
+        "Check out our YouTube channel at [Uptoskills YouTube](https://www.youtube.com/channel/UC1234567890) for helpful videos, tutorials, and webinars!"
+      ]
+    },
+    {
+      "tag": "telegram_channel",
+      "patterns": [
+        "Do you have a Telegram channel?",
+        "What is your Telegram link?",
+        "Can I find your company on Telegram?",
+        "Where can I join your Telegram group?"
+      ],
+      "responses": [
+        "Join our Telegram channel at [Uptoskills Telegram](https://t.me/uptoskills) for instant updates, resources, and community discussions!"
+      ]
+    },
+    {
+      "tag": "course_enrollment_general",
+      "patterns": [
+        "How do I enroll in a course?",
+        "What is the enrollment process for courses?",
+        "Can I register for a course online?",
+        "What are the steps to enroll?",
+        "Are there any prerequisites for course enrollment?"
+      ],
+      "responses": [
+        "To enroll in a course at Uptoskills, simply visit our course catalog, select your desired course, and follow the enrollment instructions provided. If you have any questions or need assistance, our support team is here to help!"
+      ]
+    },
+    {
+      "tag": "course_enrollment_payment",
+      "patterns": [
+        "How can I pay for the course?",
+        "Are there any fees for enrolling in courses?"
+      ],
+      "responses": [
+        "For payment details, please check the course catalog where we provide various payment options. If you have any specific questions, feel free to contact our support team!"
+      ]
+    },
+    {
+      "tag": "course_enrollment_confirmation",
+      "patterns": [
+        "How do I confirm my enrollment?",
+        "How do I know if I'm successfully enrolled?"
+      ],
+      "responses": [
+        "After enrolling in a course, you will receive a confirmation email with all the details. If you don't receive it, please check your spam folder or contact our support team."
+      ]
+    },
+    {
+      "tag": "course_enrollment_changes",
+      "patterns": [
+        "Can I change my enrollment after signing up?",
+        "What if I want to drop a course?",
+        "Can I enroll in multiple courses?"
+      ],
+      "responses": [
+        "If you wish to change or drop a course after enrollment, please contact our support team for assistance. We will guide you through the process."
+      ]
+    },
+    {
+      "tag": "course_enrollment_deadlines",
+      "patterns": [
+        "Is there a deadline for enrollment?",
+        "What happens if I miss the enrollment deadline?"
+      ],
+      "responses": [
+        "Enrollment deadlines vary by course. Please check the course details on our website. If you miss a deadline, you can still join the next available session."
+      ]
+    },
+    {
+      "tag": "free_internships_inquiry",
+      "patterns": [
+        "Do you offer free internships?",
+        "How can I apply for a free internship?",
+        "Tell me about the free internship program",
+        "What are the requirements for free internships?",
+        "How often do you offer free internships?"
+      ],
+      "responses": [
+        "Yes, we offer various free internships at Uptoskills. To apply, please visit our website and check the dedicated section for internships. You'll find all the necessary details and requirements there!"
+      ]
+    },
+    {
+      "tag": "free_courses_inquiry",
+      "patterns": [
+        "What free courses are available?",
+        "Are there any free courses I can take?",
+        "Can I enroll in free courses?",
+        "Are your courses really free?",
+        "How do I sign up for free courses?"
+      ],
+      "responses": [
+        "At Uptoskills, we have a variety of free courses available to help you enhance your skills. You can explore all the free courses by visiting our course catalog on our website."
+      ]
+    },
+    {
+      "tag": "free_training_options",
+      "patterns": [
+        "Do you have any free training options?",
+        "What are the benefits of free training programs?",
+        "Can I get certified for free training?"
+      ],
+      "responses": [
+        "Yes, we offer free training options designed to help you build skills and knowledge. Some of our free courses also provide certifications upon completion. Please check our website for more details!"
+      ]
+    },
+    {
+      "tag": "certification_free_courses",
+      "patterns": [
+        "Are there any certifications for free courses?",
+        "Will I receive a certificate for completing free courses?",
+        "What do I need to do to get certified for free courses?"
+      ],
+      "responses": [
+        "Many of our free courses offer certifications upon successful completion. You can find specific information about certifications in the course descriptions on our website."
+      ]
+    },
+    {
+      "tag": "information_free_internships",
+      "patterns": [
+        "Where can I find information about free internships?",
+        "What should I know before applying for a free internship?",
+        "How do I learn more about the internship opportunities?"
+      ],
+      "responses": [
+        "For information about free internships, please visit our website. We have a dedicated section that outlines all the available internships, including requirements and how to apply."
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "How can I contact support?",
+        "I need help with something.",
+        "Who do I reach out to for assistance?"
+      ],
+      "responses": [
+        "You can contact our support team by emailing support@uptoskills.com or calling our helpline at [phone number]. We’re here to help!"
+      ]
+    },
+    {
+      "tag": "schedule_consultation",
+      "patterns": [
+        "Can I schedule a consultation?",
+        "I want to book a meeting with an advisor.",
+        "How do I set up a consultation?"
+      ],
+      "responses": [
+        "To schedule a consultation, please visit our website's consultation page or call us at [phone number]. We'll be happy to assist you!"
+      ]
+    },
+    {
+      "tag": "event_registration",
+      "patterns": [
+        "How do I register for an event?",
+        "I want to sign up for the upcoming webinar.",
+        "Where can I find the registration link?"
+      ],
+      "responses": [
+        "You can register for events by visiting our events page at [link]. Find the event you're interested in, and click on the registration link."
+      ]
+    },
+    {
+      "tag": "scholarship_inquiry",
+      "patterns": [
+        "Are there any scholarships available?",
+        "How can I apply for a scholarship?",
+        "What scholarships does UpToSkills offer?"
+      ],
+      "responses": [
+        "We offer various scholarships based on eligibility. Please check our scholarships page at [link] for more information and the application process."
+      ]
+    },
+    {
+      "tag": "learning_materials",
+      "patterns": [
+        "Can I download learning materials?",
+        "Where can I find study resources?",
+        "Do you provide any materials for the courses?"
+      ],
+      "responses": [
+        "Yes, you can download learning materials from the course section of our website. Look for the resources tab in your course dashboard."
+      ]
+    },
+    {
+      "tag": "exam_schedules",
+      "patterns": [
+        "What are the exam dates?",
+        "When is the next certification test?",
+        "Can you provide the exam schedule?"
+      ],
+      "responses": [
+        "The exam schedules can be found on our certification page at [link]. Please check there for the latest updates on exam dates."
+      ]
+    },
+    {
+      "tag": "feedback_submission",
+      "patterns": [
+        "How can I give feedback?",
+        "I have some suggestions for improvement.",
+        "Where do I submit my feedback?"
+      ],
+      "responses": [
+        "We appreciate your feedback! You can submit it through our feedback form on the website or directly at feedback@uptoskills.com."
+      ]
+    },
+    {
+      "tag": "course_duration",
+      "patterns": [
+        "How long is the course?",
+        "What is the duration of this program?",
+        "Can you tell me how many weeks the course lasts?"
+      ],
+      "responses": [
+        "The duration of our courses varies. You can find specific course durations listed on the course detail pages."
+      ]
+    },
+    {
+      "tag": "course_requirements",
+      "patterns": [
+        "What are the prerequisites for this course?",
+        "Do I need any prior knowledge for the course?",
+        "Are there any requirements before I enroll?"
+      ],
+      "responses": [
+        "Each course has its own prerequisites listed on the course page. Please check there for more details."
+      ]
+    },
+    {
+      "tag": "job_assistance",
+      "patterns": [
+        "Do you offer job placement assistance?",
+        "How can I get help with job placement?",
+        "What career support services do you provide?"
+      ],
+      "responses": [
+        "Yes, we provide job placement assistance for our graduates. Please visit our career support page for more information."
+      ]
+    },
+    {
+      "tag": "resume_help",
+      "patterns": [
+        "Can you help me with my resume?",
+        "Do you provide resume-building services?",
+        "How can I improve my resume?"
+      ],
+      "responses": [
+        "We offer resume-building workshops and resources. Check our career services page for details on upcoming sessions."
+      ]
+    },
+    {
+      "tag": "tech_issue",
+      "patterns": [
+        "I'm having a technical issue.",
+        "The website isn't working properly.",
+        "Who do I contact for tech support?"
+      ],
+      "responses": [
+        "For technical issues, please reach out to our support team at support@uptoskills.com, and we'll assist you promptly."
+      ]
+    },
+    {
+      "tag": "training_partners",
+      "patterns": [
+        "Who are your training partners?",
+        "Do you collaborate with any organizations?",
+        "Can you tell me about your industry partners?"
+      ],
+      "responses": [
+        "We partner with various organizations to enhance our training programs. You can find more information on our partnerships page."
+      ]
+    },
+    {
+      "tag": "course_reviews",
+      "patterns": [
+        "Can I see reviews for the courses?",
+        "What do other students say about this course?",
+        "Are there any testimonials available?"
+      ],
+      "responses": [
+        "You can find student reviews and testimonials on the course detail pages. We encourage you to read them!"
+      ]
+    },
+    {
+      "tag": "career_paths",
+      "patterns": [
+        "What career paths can I pursue?",
+        "How do your courses align with careers?",
+        "Can you suggest a career based on my interests?"
+      ],
+      "responses": [
+        "Our courses are designed to prepare you for various career paths. Check our career guidance page for more insights."
+      ]
+    },
+    {
+      "tag": "mentorship_programs",
+      "patterns": [
+        "Do you have mentorship programs?",
+        "How can I find a mentor?",
+        "Can I be a part of a mentorship program?"
+      ],
+      "responses": [
+        "Yes, we offer mentorship programs. Please visit our mentorship page to learn how to get involved."
+      ]
+    },
+    {
+      "tag": "upcoming_courses",
+      "patterns": [
+        "What are the new courses being offered?",
+        "Are there any upcoming courses I can enroll in?",
+        "How can I find out about new courses?"
+      ],
+      "responses": [
+        "You can find our upcoming courses listed on the courses page. Stay updated on new offerings there!"
+      ]
+    },
+    {
+      "tag": "language_support",
+      "patterns": [
+        "Do you offer courses in other languages?",
+        "Can I take the courses in my language?",
+        "What language options are available?"
+      ],
+      "responses": [
+        "We offer courses in multiple languages. Please check the course details for available language options."
+      ]
+    },
+    {
+      "tag": "certification_renewal",
+      "patterns": [
+        "How do I renew my certification?",
+        "Is there a process for certification renewal?",
+        "What are the requirements for renewing my certification?"
+      ],
+      "responses": [
+        "To renew your certification, please visit our certification renewal page for detailed steps and requirements."
+      ]
+    },
+    {
+      "tag": "virtual_tour",
+      "patterns": [
+        "Can I take a virtual tour of your facilities?",
+        "Do you offer a virtual tour option?",
+        "How can I see your campus online?"
+      ],
+      "responses": [
+        "Yes, we offer virtual tours! You can explore our facilities by visiting the virtual tour page on our website."
+      ]
+    },
+    {
+      "tag": "industry_partnerships",
+      "patterns": [
+        "Who are your industry partners?",
+        "How do partnerships enhance your programs?",
+        "Can you tell me about the companies you work with?"
+      ],
+      "responses": [
+        "We collaborate with various industry leaders to provide relevant training. You can learn more about our partnerships on our website."
+      ]
+    },
+    {
+      "tag": "payment_plans",
+      "patterns": [
+        "Do you offer payment plans?",
+        "How can I set up a payment plan for my course?",
+        "Are there installment options available?"
+      ],
+      "responses": [
+        "Yes, we offer flexible payment plans for our courses. Please check our payment options page for details."
+      ]
+    },
+    {
+      "tag": "self_paced_courses",
+      "patterns": [
+        "Do you have self-paced courses?",
+        "Can I take courses at my own pace?",
+        "How do self-paced courses work?"
+      ],
+      "responses": [
+        "Yes, we offer self-paced courses that you can complete at your convenience. Check our course catalog for available options."
+      ]
+    }
+  ]
+}
